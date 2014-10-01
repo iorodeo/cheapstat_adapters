@@ -1,0 +1,95 @@
+
+(session cheapstat_adapter_B.ses
+  (base_design cheapstat_adapter_B.dsn)
+  (placement
+    (resolution mil 10)
+    (component PIN_ARRAY_3X1
+      (place P2 42000 -45000 back 90)
+    )
+    (component CARD_EDGE_3x2
+      (place P1 45000 -45000 front 0)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution mil 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version "(2012-apr-16-27)-stable")
+    )
+    (library_out 
+      (padstack "Via[0-1]_35:25_mil"
+        (shape
+          (circle Front 350 0 0)
+        )
+        (shape
+          (circle Back 350 0 0)
+        )
+        (attach off)
+      )
+      (padstack "Via[0-1]_35:0_mil"
+        (shape
+          (circle Front 350 0 0)
+        )
+        (shape
+          (circle Back 350 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net /counter
+        (wire
+          (path Back 80
+            42000 -44000
+            42443 -44000
+          )
+        )
+        (wire
+          (path Back 80
+            44000 -45950
+            44000 -45357
+          )
+        )
+        (wire
+          (path Back 80
+            44000 -45357
+            43800 -45357
+            42443 -44000
+          )
+        )
+      )
+      (net /reference
+        (wire
+          (path Front 80
+            46000 -45357
+            45643 -45000
+            42000 -45000
+          )
+        )
+        (wire
+          (path Front 80
+            46000 -45950
+            46000 -45357
+          )
+        )
+      )
+      (net /working
+        (wire
+          (path Front 80
+            45000 -45950
+            45000 -45357
+          )
+        )
+        (wire
+          (path Front 80
+            45000 -45357
+            42643 -45357
+            42000 -46000
+          )
+        )
+      )
+    )
+  )
+)

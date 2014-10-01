@@ -1,0 +1,114 @@
+(pcb /home/jo/work/cheapstat_adapter_B/cheapstat_adapter_B.dsn
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "(2012-apr-16-27)-stable")
+  )
+  (resolution mil 10)
+  (unit mil)
+  (structure
+    (layer Front
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer Back
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (path pcb 0  4875 -4750  4875 -4250  4125 -4250  4125 -4750  4875 -4750)
+    )
+    (via "Via[0-1]_35:25_mil" "Via[0-1]_35:0_mil")
+    (rule
+      (width 8)
+      (clearance 10.1)
+      (clearance 10.1 (type default_smd))
+      (clearance 2.5 (type smd_smd))
+    )
+  )
+  (placement
+    (component PIN_ARRAY_3X1
+      (place P2 4200 -4500 back 90)
+    )
+    (component CARD_EDGE_3x2
+      (place P1 4500 -4500 front 0)
+    )
+  )
+  (library
+    (image PIN_ARRAY_3X1
+      (outline (path signal 6  -150 -50  -150 50))
+      (outline (path signal 6  -150 50  150 50))
+      (outline (path signal 6  150 50  150 -50))
+      (outline (path signal 6  150 -50  -150 -50))
+      (outline (path signal 6  -50 50  -50 -50))
+      (pin Rect[A]Pad_60x60_mil 1 -100 0)
+      (pin Round[A]Pad_60_mil 2 0 0)
+      (pin Round[A]Pad_60_mil 3 100 0)
+    )
+    (image CARD_EDGE_3x2
+      (outline (path signal 15  -200 -160  225 -160))
+      (outline (path signal 15  -225 160  -225 -135))
+      (outline (path signal 15  -225 -135  -200 -160))
+      (outline (path signal 15  -225 160  225 160))
+      (outline (path signal 15  225 160  225 -160))
+      (pin Oval[A]Pad_60x90_mil 2 -100 95)
+      (pin Oval[A]Pad_60x90_mil 4 0 95)
+      (pin Oval[A]Pad_60x90_mil 6 100 95)
+      (pin Oval[A]Pad_60x90_mil 1 -100 -95)
+      (pin Oval[A]Pad_60x90_mil 3 0 -95)
+      (pin Oval[A]Pad_60x90_mil 5 100 -95)
+    )
+    (padstack Round[A]Pad_60_mil
+      (shape (circle Front 60))
+      (shape (circle Back 60))
+      (attach off)
+    )
+    (padstack Oval[A]Pad_60x90_mil
+      (shape (path Front 60  0 -15  0 15))
+      (shape (path Back 60  0 -15  0 15))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_60x60_mil
+      (shape (rect Front -30 -30 30 30))
+      (shape (rect Back -30 -30 30 30))
+      (attach off)
+    )
+    (padstack "Via[0-1]_35:25_mil"
+      (shape (circle Front 35))
+      (shape (circle Back 35))
+      (attach off)
+    )
+    (padstack "Via[0-1]_35:0_mil"
+      (shape (circle Front 35))
+      (shape (circle Back 35))
+      (attach off)
+    )
+  )
+  (network
+    (net /counter
+      (pins P2-1 P1-1)
+    )
+    (net /reference
+      (pins P2-2 P1-5)
+    )
+    (net /working
+      (pins P2-3 P1-3)
+    )
+    (class kicad_default "" /counter /reference /working
+      (circuit
+        (use_via Via[0-1]_35:25_mil)
+      )
+      (rule
+        (width 8)
+        (clearance 10.1)
+      )
+    )
+  )
+  (wiring
+  )
+)

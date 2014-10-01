@@ -1,0 +1,303 @@
+PCBNEW-BOARD Version 1 date Wed 01 Oct 2014 12:36:06 PM PDT
+
+# Created by Pcbnew(2012-apr-16-27)-stable
+
+$GENERAL
+encoding utf-8
+LayerCount 2
+Ly 1FFF8001
+EnabledLayers 1FFF8001
+Links 3
+NoConn 0
+Di 23560 19849 30151 30151
+Ndraw 8
+Ntrack 17
+Nzone 0
+BoardThickness 630
+Nmodule 2
+Nnets 4
+$EndGENERAL
+
+$SHEETDESCR
+Sheet A4 11700 8267
+Title ""
+Date "1 oct 2014"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndSHEETDESCR
+
+$SETUP
+InternalUnit 0.000100 INCH
+Layers 2
+Layer[0] Back signal
+Layer[15] Front signal
+TrackWidth 90
+TrackClearence 100
+ZoneClearence 200
+TrackMinWidth 80
+DrawSegmWidth 150
+EdgeSegmWidth 150
+ViaSize 350
+ViaDrill 250
+ViaMinSize 350
+ViaMinDrill 200
+MicroViaSize 200
+MicroViaDrill 50
+MicroViasAllowed 0
+MicroViaMinSize 200
+MicroViaMinDrill 50
+TextPcbWidth 120
+TextPcbSize 600 800
+EdgeModWidth 150
+TextModSize 600 600
+TextModWidth 120
+PadSize 600 600
+PadDrill 400
+Pad2MaskClearance 100
+AuxiliaryAxisOrg 0 0
+PcbPlotParams (pcbplotparams (layerselection 284196865) (usegerberextensions true) (excludeedgelayer true) (linewidth 60) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 0) (pscolor true) (psnegative false) (psa4output false) (plotreference true) (plotvalue true) (plotothertext true) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 1) (mirror false) (drillshape 1) (scaleselection 1) (outputdirectory gerber_v1.2/))
+$EndSETUP
+
+$EQUIPOT
+Na 0 ""
+St ~
+$EndEQUIPOT
+$EQUIPOT
+Na 1 "/counter"
+St ~
+$EndEQUIPOT
+$EQUIPOT
+Na 2 "/reference"
+St ~
+$EndEQUIPOT
+$EQUIPOT
+Na 3 "/working"
+St ~
+$EndEQUIPOT
+$NCLASS
+Name "Default"
+Desc "This is the default net class."
+Clearance 100
+TrackWidth 90
+ViaDia 350
+ViaDrill 250
+uViaDia 200
+uViaDrill 50
+AddNet ""
+AddNet "/counter"
+AddNet "/reference"
+AddNet "/working"
+$EndNCLASS
+$MODULE PIN_ARRAY_3X1
+Po 29250 25000 900 0 54148F6E 53D1940E ~~
+Li PIN_ARRAY_3X1
+Cd Connecteur 3 pins
+Kw CONN DEV
+Sc 53D1940E
+AR /53D1864A
+Op 0 0 0
+T0 -2200 -50 600 600 900 120 M V 20 N "P2"
+T1 0 -900 400 400 900 60 M I 20 N ""
+DS -1500 -500 -1500 500 60 20
+DS -1500 500 1500 500 60 20
+DS 1500 500 1500 -500 60 20
+DS 1500 -500 -1500 -500 60 20
+DS -500 500 -500 -500 60 20
+$PAD
+Sh "1" R 600 600 0 0 900
+Dr 400 0 0
+At STD N 00D0FFFF
+Ne 1 "/counter"
+Po -1000 0
+$EndPAD
+$PAD
+Sh "2" C 600 600 0 0 900
+Dr 400 0 0
+At STD N 00D0FFFF
+Ne 2 "/reference"
+Po 0 0
+$EndPAD
+$PAD
+Sh "3" C 600 600 0 0 900
+Dr 400 0 0
+At STD N 00D0FFFF
+Ne 3 "/working"
+Po 1000 0
+$EndPAD
+$SHAPE3D
+Na "pin_array/pins_array_3x1.wrl"
+Sc 1.000000 1.000000 1.000000
+Of 0.000000 0.000000 0.000000
+Ro 0.000000 0.000000 0.000000
+$EndSHAPE3D
+$EndMODULE  PIN_ARRAY_3X1
+$MODULE 5X2_SHRD_HEADER
+Po 26500 25000 2700 15 54148D92 54148AD8 ~~
+Li 5X2_SHRD_HEADER
+Sc 54148AD8
+AR /53D18668
+Op 0 0 0
+T0 -4450 0 600 600 3600 120 N V 21 N "P1"
+T1 2047 2480 600 600 2700 120 N V 21 N ""
+DS -2000 2000 -2300 2300 150 21
+DS -2300 2300 -1700 2300 150 21
+DS -1700 2300 -2000 2000 150 21
+DS -4000 -1900 4000 -1900 150 21
+DS 4000 -1900 4000 1900 150 21
+DS 4000 1900 -4000 1900 150 21
+DS -4000 1900 -4000 -1900 150 21
+T2 1929 -1260 500 500 2700 100 N V 21 N "10"
+T2 2047 1378 500 500 2700 100 N V 21 N "9"
+T2 -2008 -1260 500 500 2700 100 N V 21 N "2"
+$PAD
+Sh "1" R 700 700 0 0 2700
+Dr 400 0 0
+At STD N 00E0FFFF
+Ne 1 "/counter"
+Po -2000 500
+$EndPAD
+$PAD
+Sh "2" C 700 700 0 0 2700
+Dr 400 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -2000 -500
+$EndPAD
+$PAD
+Sh "3" C 700 700 0 0 2700
+Dr 400 0 0
+At STD N 00E0FFFF
+Ne 3 "/working"
+Po -1000 500
+$EndPAD
+$PAD
+Sh "4" C 700 700 0 0 2700
+Dr 400 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -1000 -500
+$EndPAD
+$PAD
+Sh "5" C 700 700 0 0 2700
+Dr 400 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 0 500
+$EndPAD
+$PAD
+Sh "6" C 700 700 0 0 2700
+Dr 400 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 0 -500
+$EndPAD
+$PAD
+Sh "7" C 700 700 0 0 2700
+Dr 400 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 1000 500
+$EndPAD
+$PAD
+Sh "8" C 700 700 0 0 2700
+Dr 400 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 1000 -500
+$EndPAD
+$PAD
+Sh "9" C 700 700 0 0 2700
+Dr 400 0 0
+At STD N 00E0FFFF
+Ne 2 "/reference"
+Po 2000 500
+$EndPAD
+$PAD
+Sh "10" C 700 700 0 0 2700
+Dr 400 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 2000 -500
+$EndPAD
+$EndMODULE  5X2_SHRD_HEADER
+$DRAWSEGMENT
+Po 0 24000 20000 30000 20000 150
+De 28 0 900 0 0
+$EndDRAWSEGMENT
+$TEXTPCB
+Te "W"
+Po 28400 24000 500 500 80 0
+De 20 1 0 Normal C
+$EndTEXTPCB
+$TEXTPCB
+Te "R"
+Po 28400 25000 500 500 80 0
+De 20 0 0 Normal C
+$EndTEXTPCB
+$TEXTPCB
+Te "C"
+Po 28400 26000 500 500 80 0
+De 20 0 0 Normal C
+$EndTEXTPCB
+$TEXTPCB
+Te "IO Rodeo"
+nl "CheapStat SPE "
+nl "Adapter A v 1.2"
+Po 26950 28000 450 450 75 0
+De 20 0 0 Normal C
+$EndTEXTPCB
+$DRAWSEGMENT
+Po 0 30000 20000 30000 30000 150
+De 28 0 900 0 0
+$EndDRAWSEGMENT
+$DRAWSEGMENT
+Po 0 24000 30000 30000 30000 150
+De 28 0 900 0 0
+$EndDRAWSEGMENT
+$DRAWSEGMENT
+Po 0 24000 20000 24000 30000 150
+De 28 0 900 0 0
+$EndDRAWSEGMENT
+$TRACK
+Po 0 28600 26000 29250 26000 90 -1
+De 0 0 1 0 800000
+Po 0 28100 25500 28600 26000 90 -1
+De 0 0 1 0 0
+Po 0 28100 24000 28100 25500 90 -1
+De 0 0 1 0 0
+Po 0 27600 23500 28100 24000 90 -1
+De 0 0 1 0 0
+Po 0 26550 23500 27600 23500 90 -1
+De 0 0 1 0 0
+Po 0 26050 23000 26550 23500 90 -1
+De 0 0 1 0 0
+Po 0 26000 23000 26050 23000 90 -1
+De 0 0 1 0 400000
+Po 0 28800 25000 29250 25000 90 -1
+De 15 0 2 0 800000
+Po 0 26000 26950 26450 26500 90 -1
+De 15 0 2 0 0
+Po 0 26450 26500 27300 26500 90 -1
+De 15 0 2 0 0
+Po 0 27300 26500 28800 25000 90 -1
+De 15 0 2 0 0
+Po 0 26000 27000 26000 26950 90 -1
+De 15 0 2 0 400000
+Po 0 26000 24000 26500 24500 90 -1
+De 15 0 3 0 400000
+Po 0 27850 24000 29250 24000 90 -1
+De 15 0 3 0 800000
+Po 0 27350 24500 27850 24000 90 -1
+De 15 0 3 0 0
+Po 0 27100 24500 27350 24500 90 -1
+De 15 0 3 0 0
+Po 0 26500 24500 27100 24500 90 -1
+De 15 0 3 0 0
+$EndTRACK
+$ZONE
+$EndZONE
+$EndBOARD

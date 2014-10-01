@@ -1,0 +1,14 @@
+# EESchema Netlist Version 1.1 created  Sat 13 Sep 2014 12:40:53 PM PDT
+(
+ ( /54149505 PIN_ARRAY_3X1 P1 CONN_3
+  ( 1 /counter )
+  ( 2 /reference )
+  ( 3 /working )
+ )
+ ( /5414947E WIRE_CONN_3 P2 CONN_3
+  ( 1 /counter )
+  ( 2 /reference )
+  ( 3 /working )
+ )
+)
+*

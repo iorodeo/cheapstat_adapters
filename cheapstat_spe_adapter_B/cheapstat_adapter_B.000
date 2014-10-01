@@ -1,0 +1,271 @@
+PCBNEW-BOARD Version 1 date Sat 13 Sep 2014 10:18:15 AM PDT
+
+# Created by Pcbnew(2012-apr-16-27)-stable
+
+$GENERAL
+encoding utf-8
+LayerCount 2
+Ly 1FFF8001
+EnabledLayers 1FFF8001
+Links 3
+NoConn 0
+Di 41099 42349 49361 47651
+Ndraw 11
+Ntrack 10
+Nzone 0
+BoardThickness 630
+Nmodule 2
+Nnets 4
+$EndGENERAL
+
+$SHEETDESCR
+Sheet A4 11700 8267
+Title ""
+Date "13 sep 2014"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndSHEETDESCR
+
+$SETUP
+InternalUnit 0.000100 INCH
+Layers 2
+Layer[0] Back signal
+Layer[15] Front signal
+TrackWidth 150
+TrackClearence 100
+ZoneClearence 200
+TrackMinWidth 80
+DrawSegmWidth 150
+EdgeSegmWidth 150
+ViaSize 350
+ViaDrill 250
+ViaMinSize 350
+ViaMinDrill 200
+MicroViaSize 200
+MicroViaDrill 50
+MicroViasAllowed 0
+MicroViaMinSize 200
+MicroViaMinDrill 50
+TextPcbWidth 120
+TextPcbSize 600 800
+EdgeModWidth 150
+TextModSize 600 600
+TextModWidth 120
+PadSize 600 600
+PadDrill 400
+Pad2MaskClearance 100
+AuxiliaryAxisOrg 0 0
+PcbPlotParams (pcbplotparams (layerselection 284196865) (usegerberextensions true) (excludeedgelayer true) (linewidth 60) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 0) (pscolor true) (psnegative false) (psa4output false) (plotreference true) (plotvalue true) (plotothertext true) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 1) (mirror false) (drillshape 1) (scaleselection 1) (outputdirectory gerber/))
+$EndSETUP
+
+$EQUIPOT
+Na 0 ""
+St ~
+$EndEQUIPOT
+$EQUIPOT
+Na 1 "/counter"
+St ~
+$EndEQUIPOT
+$EQUIPOT
+Na 2 "/reference"
+St ~
+$EndEQUIPOT
+$EQUIPOT
+Na 3 "/working"
+St ~
+$EndEQUIPOT
+$NCLASS
+Name "Default"
+Desc "This is the default net class."
+Clearance 100
+TrackWidth 150
+ViaDia 350
+ViaDrill 250
+uViaDia 200
+uViaDrill 50
+AddNet ""
+AddNet "/counter"
+AddNet "/reference"
+AddNet "/working"
+$EndNCLASS
+$MODULE PIN_ARRAY_3X1
+Po 42000 45000 2700 0 54147AE3 54139DFC ~~
+Li PIN_ARRAY_3X1
+Cd Connecteur 3 pins
+Kw CONN DEV
+Sc 54139DFC
+AR /541339B9
+Op 0 0 0
+T0 -1850 31 400 400 5400 60 M V 20 N "P2"
+T1 1890 -1575 400 400 5400 60 M I 20 N ""
+DS -1500 -500 -1500 500 60 20
+DS -1500 500 1500 500 60 20
+DS 1500 500 1500 -500 60 20
+DS 1500 -500 -1500 -500 60 20
+DS -500 500 -500 -500 60 20
+$PAD
+Sh "1" R 600 600 0 0 2700
+Dr 400 0 0
+At STD N 00D0FFFF
+Ne 1 "/counter"
+Po -1000 0
+$EndPAD
+$PAD
+Sh "2" C 600 600 0 0 2700
+Dr 400 0 0
+At STD N 00D0FFFF
+Ne 2 "/reference"
+Po 0 0
+$EndPAD
+$PAD
+Sh "3" C 600 600 0 0 2700
+Dr 400 0 0
+At STD N 00D0FFFF
+Ne 3 "/working"
+Po 1000 0
+$EndPAD
+$SHAPE3D
+Na "pin_array/pins_array_3x1.wrl"
+Sc 1.000000 1.000000 1.000000
+Of 0.000000 0.000000 0.000000
+Ro 0.000000 0.000000 0.000000
+$EndSHAPE3D
+$EndMODULE  PIN_ARRAY_3X1
+$MODULE CARD_EDGE_3x2
+Po 45000 45000 0 15 54147AEE 54139C2C ~~
+Li CARD_EDGE_3x2
+Sc 54139C2C
+AR /5413399F
+Op 0 0 0
+T0 2953 39 600 600 0 120 N V 21 N "P1"
+T1 2874 -39 600 600 900 120 N I 21 N ""
+DS -2000 1600 2250 1600 150 21
+DS -2250 -1600 -2250 1350 150 21
+DS -2250 1350 -2000 1600 150 21
+DS -2250 -1600 2250 -1600 150 21
+DS 2250 -1600 2250 1600 150 21
+$PAD
+Sh "2" O 600 900 0 0 0
+Dr 400 0 0
+At STD N 00F0FFFF
+Ne 0 ""
+Po -1000 -950
+$EndPAD
+$PAD
+Sh "4" O 600 900 0 0 0
+Dr 400 0 0
+At STD N 00F0FFFF
+Ne 0 ""
+Po 0 -950
+$EndPAD
+$PAD
+Sh "6" O 600 900 0 0 0
+Dr 400 0 0
+At STD N 00F0FFFF
+Ne 0 ""
+Po 1000 -950
+$EndPAD
+$PAD
+Sh "1" O 600 900 0 0 0
+Dr 400 0 0
+At STD N 00F0FFFF
+Ne 1 "/counter"
+Po -1000 950
+$EndPAD
+$PAD
+Sh "3" O 600 900 0 0 0
+Dr 400 0 0
+At STD N 00F0FFFF
+Ne 3 "/working"
+Po 0 950
+$EndPAD
+$PAD
+Sh "5" O 600 900 0 0 0
+Dr 400 0 0
+At STD N 00F0FFFF
+Ne 2 "/reference"
+Po 1000 950
+$EndPAD
+$EndMODULE  CARD_EDGE_3x2
+$TEXTPCB
+Te "R"
+Po 43000 45000 500 500 100 0
+De 20 0 0 Normal C
+$EndTEXTPCB
+$TEXTPCB
+Te "IO Rodeo Inc."
+nl "CheapStat SPE "
+nl "Adapter B v0.1"
+Po 46929 45000 400 400 80 900
+De 20 0 0 Normal C
+$EndTEXTPCB
+$TEXTPCB
+Te "W"
+Po 43000 46000 500 500 100 0
+De 20 1 0 Normal C
+$EndTEXTPCB
+$TEXTPCB
+Te "C"
+Po 43000 44000 500 500 100 0
+De 20 0 0 Normal C
+$EndTEXTPCB
+$TEXTPCB
+Te "R"
+Po 46000 47100 500 500 100 0
+De 21 1 0 Normal C
+$EndTEXTPCB
+$TEXTPCB
+Te "W"
+Po 45000 47100 500 500 100 0
+De 21 1 0 Normal C
+$EndTEXTPCB
+$TEXTPCB
+Te "C"
+Po 44000 47100 500 500 100 0
+De 21 1 0 Normal C
+$EndTEXTPCB
+$DRAWSEGMENT
+Po 0 48750 42500 48750 47500 150
+De 28 0 900 0 0
+$EndDRAWSEGMENT
+$DRAWSEGMENT
+Po 0 41250 42500 41250 47500 150
+De 28 0 900 0 0
+$EndDRAWSEGMENT
+$DRAWSEGMENT
+Po 0 41250 47500 48750 47500 150
+De 28 0 900 0 0
+$EndDRAWSEGMENT
+$DRAWSEGMENT
+Po 0 41250 42500 48750 42500 150
+De 28 0 900 0 0
+$EndDRAWSEGMENT
+$TRACK
+Po 0 42000 44000 42661 44000 150 -1
+De 0 0 1 0 400000
+Po 0 44000 45339 44000 45950 150 -1
+De 0 0 1 0 800000
+Po 0 42661 44000 44000 45339 150 -1
+De 0 0 1 0 0
+Po 0 42000 45000 45630 45000 150 -1
+De 15 0 2 0 400000
+Po 0 46000 45370 46000 45950 150 -1
+De 15 0 2 0 800000
+Po 0 45630 45000 46000 45370 150 -1
+De 15 0 2 0 0
+Po 0 42000 46000 42063 46000 150 -1
+De 0 0 3 0 C00000
+Po 0 44178 46772 45000 45950 150 -1
+De 0 0 3 0 800000
+Po 0 42835 46772 44178 46772 150 -1
+De 0 0 3 0 0
+Po 0 42063 46000 42835 46772 150 -1
+De 0 0 3 0 400000
+$EndTRACK
+$ZONE
+$EndZONE
+$EndBOARD
