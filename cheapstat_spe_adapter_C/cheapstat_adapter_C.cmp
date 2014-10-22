@@ -1,0 +1,17 @@
+Cmp-Mod V01 Created by CvPcb (2012-apr-16-27)-stable date = Wed 22 Oct 2014 11:50:21 AM PDT
+
+BeginCmp
+TimeStamp = /5413399F;
+Reference = P1;
+ValeurCmp = CONN_3X2;
+IdModule  = CARD_EDGE_3x2_C;
+EndCmp
+
+BeginCmp
+TimeStamp = /541339B9;
+Reference = P2;
+ValeurCmp = CONN_3;
+IdModule  = PIN_ARRAY_3X1;
+EndCmp
+
+EndListe
