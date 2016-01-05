@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-apr-16-27)-stable date = Sat 13 Sep 2014 12:40:53 PM PDT
+Cmp-Mod V01 Created by CvPcb (2013-jul-07)-stable date = Tue 05 Jan 2016 02:14:38 PM PST
 
 BeginCmp
 TimeStamp = /54149505;
@@ -11,7 +11,7 @@ BeginCmp
 TimeStamp = /5414947E;
 Reference = P2;
 ValeurCmp = CONN_3;
-IdModule  = WIRE_CONN_3;
+IdModule  = SCREWTERM3;
 EndCmp
 
 EndListe
